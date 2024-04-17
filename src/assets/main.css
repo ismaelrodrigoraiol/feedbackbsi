@@ -1,0 +1,151 @@
+@import './base.css';
+
+
+:root {
+	--primaria: #1741ffda;
+	--luz: #EEE;
+	--cinza: #bdbcbc;
+	--cinza-escuro: #7e8080;
+	--escuro: #29293a;
+	--sombra: 0 1px 3px rgba(0, 0, 0, 0.1);
+	--business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+	--personal-glow: 0px 0px 4px rgba(141, 108, 231, 0.75);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'montserrat', sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: initial;
+}
+
+
+body {
+	color: var(--dark);
+	background: var(--luz);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+
+}
+main{
+	padding: 5px;
+}
+
+label {
+	display: flex;
+	margin: 10px;
+	min-width: 95%;
+	max-width: max-content;
+	border-radius: 2.1rem;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+	background-color: #e3e4e4;
+	margin-top: 10px;
+
+}
+
+label div {
+	display: flex;
+	color: var(--escuro);
+	font-size: 1.1225rem;
+	margin-top: 0.1rem;
+	padding: 1.2rem;
+	
+}
+
+.options {
+	display: auto;	
+	background-color: #ffffff;
+	box-shadow: var(--sombra);
+	border-radius: 1.225rem;
+	margin: 0 auto;
+	padding: 0.225rem 0.225rem;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	display: none;
+}
+
+
+
+.bubble {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid var(--primaria);
+	box-shadow: var(--sombra);
+	margin-top: .2rem;
+	
+}
+
+.bubble::after {
+	content: "";
+	display: flex;
+	opacity: 0;
+	width: 10px;
+	height: 10px;
+	background-color: var(--primaria);
+	box-shadow: var(--business-glow);
+	border-radius: 50%;
+	transition: 0.2s ease-in-out;
+}
+
+input:checked ~ .bubble::after {
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+	
+}
+.btn input[type="button"]{
+	display: block;
+	width: 150px;
+	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
+	color: #ffffff;
+	background-color: var(--primaria);
+	border-radius: 0.555rem;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+    margin: 0 auto;
+    margin-top: 3.8rem;
+	
+}
+.btn input[type="button"]:hover {
+	opacity: 0.75;
+	background-color: var(--cinza);
+}
+.btn-router {
+	display: block;
+	text-align: center;
+	width: 20%;
+	margin: 0 auto;
+	font-size: 1.225rem;
+	padding: 1rem 1rem;
+	color: #ffffff;
+	background-color: var(--primaria);
+	border-radius: 0.555rem;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	margin-top: 3.5rem;
+	margin-bottom: 3.5rem;
+	transition: box-shadow .5s;
+ }
+
+
+  
