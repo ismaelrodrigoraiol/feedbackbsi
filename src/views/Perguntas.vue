@@ -49,7 +49,8 @@ const finish = ()=> {
          nome: input_name.value,
 			matricula: input_matricula.value,
 			respostas: respostas.value,
-			comentario: input_comentario.value
+			comentario: input_comentario.value,
+         data: new Date()
 		})
    
 
