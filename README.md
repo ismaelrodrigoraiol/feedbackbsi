@@ -29,7 +29,10 @@ npm run dev
 npm run build
 ```
 ## Screenshot
-![Tela Concluído](./src/img/screenshot1.png)
+![Tela de início](./src/img/Screenshot1.png)
+![Tela de início 2](./src/img/Screenshot2.png)
+![Tela de perguntas](./src/img/Screenshot3.png)
+![Tela final](./src/img/Screenshot4.png)
 
 
 ## Documento de visão
